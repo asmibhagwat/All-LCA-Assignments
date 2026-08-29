@@ -1,1 +1,15 @@
+"""Assignment2- Largest Number"""
 
+a = float(input("Enter first number"))
+b = float(input("Enter second number"))
+c = float(input("Enter third number"))
+
+if a>=b and a>=c:
+    largest = a
+elif b>=a and c>=a:
+    largest = b
+else:
+    largest = c
+
+print()
+print("The Largest Number is ", largest )
