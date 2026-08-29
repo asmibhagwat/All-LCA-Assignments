@@ -1,1 +1,32 @@
+"""Assignment 1- Student Data Management"""
 
+students = {
+    101: ("Raj","ECE",80),
+    102: ("Sanvi","CSE",91),
+    103: ("Jai","EM",65),
+    104: ("Priya","IT",87)
+           }
+
+roll_num = [101,102,103,104]
+
+print("Initial student record:")
+for roll, details in students.items():
+    print(roll,details)
+    
+students[105]=("Shriya","EM",98)
+roll_num.append(105)
+
+del students[102]
+roll_num.remove(102)
+
+students[103]= ("Jai","ECE",85)
+
+print()
+print("Final student record:")
+for roll, details in students.items():
+    print("Roll Number",roll)
+    print("Name",details[0])
+    print("Branch",details[1])
+    print("Marks",details[2])
+    print()
+    
